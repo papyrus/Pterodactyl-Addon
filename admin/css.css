@@ -1,0 +1,23 @@
+/* Papyrus Protection Admin Styles */
+.label-success {
+    background-color: #00a65a;
+}
+
+.small-box .inner h3,
+.small-box .inner p {
+    color: #fff !important;
+}
+.small-box .icon i {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.papyrus-settings-section {
+    margin-bottom: 20px;
+}
+
+.papyrus-settings-section h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}

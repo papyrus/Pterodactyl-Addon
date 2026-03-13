@@ -1,0 +1,35 @@
+Navigation:
+  NavigationBar:
+    BeforeNavigation: ""
+    AdditionalItems: ""
+    AfterNavigation: ""
+  SubNavigation:
+    BeforeSubNavigation: "elements/SftpGuard"
+    AdditionalServerItems: ""
+    AdditionalAccountItems: ""
+    AfterSubNavigation: ""
+  Routes:
+    - Name: "DDoS Protection"
+      Path: "ddos-protection"
+      Type: "server"
+      Component: "ProtectionTab"
+      AdminOnly: "false"
+
+Dashboard:
+  Global:
+    BeforeSection: ""
+    AfterSection: ""
+  Serverlist:
+    BeforeContent: ""
+    AfterContent: ""
+    ServerRow:
+      BeforeEntryName: ""
+      AfterEntryName: "elements/ProtectionBadge"
+      BeforeEntryDescription: ""
+      AfterEntryDescription: ""
+
+Server:
+  Terminal:
+    BeforeContent: ""
+    AfterInformation: ""
+    AfterContent: ""

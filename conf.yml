@@ -1,0 +1,36 @@
+info:
+  name: "Papyrus Protection"
+  identifier: "papyrusprotection"
+  description: "One-click Minecraft DDoS protection powered by Papyrus. Integrates Blaze proxy management and Cloudflare DNS automation directly into your panel."
+  flags: "hasInstallScript,hasRemoveScript"
+  version: "1.0.0"
+  target: "beta-2026-01"
+  author: "Papyrus"
+  icon: "icon.png"
+  website: "https://papyrus.vip"
+
+admin:
+  view: "admin/view.blade.php"
+  controller: "admin/controller.php"
+  css: "admin/css.css"
+  wrapper: ""
+
+dashboard:
+  css: "dashboard/css.css"
+  wrapper: ""
+  components: "dashboard/components"
+
+requests:
+  views: ""
+  app: "requests/app"
+  routers:
+    application: "requests/routers/application.php"
+    client: "requests/routers/client.php"
+    web: "requests/routers/web.php"
+
+data:
+  directory: "data/directory"
+  public: "data/public"
+
+database:
+  migrations: "database/migrations"
