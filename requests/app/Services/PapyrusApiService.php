@@ -95,7 +95,15 @@ class PapyrusApiService
 
     public function updateProxy(string $id, array $config): array
     {
-        return $this->request('put', "/blaze/networks/{$id}", $config);
+        $current = $this->getProxy($id);
+        $currentData = $current['data'] ?? $current;
+
+        // Remove read-only / metadata fields that the API doesn't accept on update
+        unset($currentData['_id'], $currentData['id'], $currentData['user'], $currentData['created_at'], $currentData['updated_at'], $currentData['__v']);
+
+        $merged = array_replace($currentData, $config);
+
+        return $this->request('put', "/blaze/networks/{$id}", $merged);
     }
 
     public function deleteProxy(string $id): array
